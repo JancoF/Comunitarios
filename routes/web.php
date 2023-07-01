@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProyectoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,16 +14,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/proyectos', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 
-// crud de colaborador
-/*Route::get("/colaborador/create", function() {
-    return "Mostrar el formulario para crear un colaborador";
-});*/
+// crud de proyectos
+Route::get("/proyecto/create", [ProyectoController::class,'create']);
 
-Route::get("colaborador/{nombre?}", function($nombre=null){
+
+Route::get('/proyecto',[ProyectoController::class, 'index']);
+   
+Route:: get("/fondos",[ProyectoController::class, 'fondos']);
+
+/*
+Route::get("proyetos/{nombre?}", function($nombre=null){
     
     if ($nombre != null){
     return "el colaborado es: $nombre";
@@ -30,7 +35,7 @@ Route::get("colaborador/{nombre?}", function($nombre=null){
     else{
         return "mostrar el formulario de crear productos";
     }
-});
+});*/
 
 Auth::routes();
 
