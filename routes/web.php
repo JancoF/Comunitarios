@@ -13,8 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/proyectos', function () {
     return view('welcome');
+});
+
+// crud de colaborador
+/*Route::get("/colaborador/create", function() {
+    return "Mostrar el formulario para crear un colaborador";
+});*/
+
+Route::get("colaborador/{nombre?}", function($nombre=null){
+    
+    if ($nombre != null){
+    return "el colaborado es: $nombre";
+    }
+    else{
+        return "mostrar el formulario de crear productos";
+    }
 });
 
 Auth::routes();
