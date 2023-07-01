@@ -18,11 +18,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/index',[ProyectoController::class, 'index']);
+
+
 // crud de proyectos
 Route::get("/proyecto/create", [ProyectoController::class,'create']);
 
 
-Route::get('/proyecto',[ProyectoController::class, 'index']);
+Route::get('/proyecto',[ProyectoController::class, 'proyecto']);
    
 Route:: get("/fondos",[ProyectoController::class, 'fondos']);
 
