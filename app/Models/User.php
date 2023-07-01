@@ -43,14 +43,18 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    public function Colaborador(){
-
-    return $this->belongsTo(Colaborador::class);
+    public function persona(){
+        return $this->hasMany(Persona::class); 
     }
 
-    public function Tarjeta(){
+    public function Contribuidor(){
 
-        return $this->hasMany(Tarjeta::class);
+    return $this->hasMany(Contribuidor::class);
+    }
+
+    public function Transaccion(){
+
+        return $this->hasMany(Transaccion::class);
         }
 
 }

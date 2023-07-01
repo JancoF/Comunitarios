@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string("titulo");
             $table->string("descripcion");
             $table->integer("presupuesto");
+            $table->unsignedBigInteger('persona_id');
+            $table->foreign('persona_id')->references('id')->on('persona');
             $table->timestamps();
         });
     }

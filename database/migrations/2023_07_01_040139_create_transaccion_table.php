@@ -17,6 +17,8 @@ return new class extends Migration
             $table->integer('fechaTransaccion')->unique();
             $table->unsignedBigInteger('cuenta_id');
             $table->foreign('cuenta_id')->references('id')->on('cuenta');
+            $table->unsignedBigInteger('contribuidor_id');
+            $table->foreign('contribuidor_id')->references('id')->on('contribuidor');
             $table->timestamps();
         });
     }

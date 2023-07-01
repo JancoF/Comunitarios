@@ -11,14 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('contribuidor', function (Blueprint $table) {
+        Schema::create('direccion', function (Blueprint $table) {
             $table->id();
-            $table->string("nombre");
-            $table->string("apellidos");
-            $table->integer("ruc")->nullable();
-            $table->string("email");
-            $table->unsignedBigInteger('cuenta_id');
-            $table->foreign('cuenta_id')->references('id')->on('cuenta');
+            $table->string("direcccion");
+            $table->string("cuidad");
+            $table->string("pais");
+            $table->unsignedBigInteger('contribuidor_id');
+            $table->foreign('contribuidor_id')->references('id')->on('contribuidor');
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('contribuidor');
+        Schema::dropIfExists('direccion');
     }
 };

@@ -11,13 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('cuenta', function (Blueprint $table) {
+        Schema::create('benificiario', function (Blueprint $table) {
             $table->id();
-            $table->integer('N° tarjeta')->unique();
-            $table->integer('fecha_caducidad');
-            $table->integer('cvv');
-            $table->unsignedBigInteger('proyecto_id');
-            $table->foreign('proyecto_id')->references('id')->on('proyecto');
+            $table->string('nombreOrganizacion');
+            $table->string('tipoBenificiario');
+            $table->unsignedBigInteger('transaccion_id');
+            $table->foreign('transaccion_id')->references('id')->on('transaccion');
             $table->timestamps();
         });
     }
@@ -27,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('cuenta');
+        Schema::dropIfExists('benificiario');
     }
 };
