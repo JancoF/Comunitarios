@@ -23,12 +23,15 @@ Route::get('/index',[ProyectoController::class, 'index']);
 
 
 // crud de proyectos
-Route::get("/proyecto/create", [ProyectoController::class,'create']);
+Route::get("/create", [ProyectoController::class,'create']);
 
 
-Route::get('/proyecto',[ProyectoController::class, 'proyecto']);
+Route::get('/hacemos',[ProyectoController::class, 'hacemos']);
    
 Route:: get("/fondos",[ProyectoController::class, 'fondos']);
+
+Route:: get("/conocenos",[ProyectoController::class, 'conocenos']);
+
 
 /*
 Route::get("proyetos/{nombre?}", function($nombre=null){
