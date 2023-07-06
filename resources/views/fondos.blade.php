@@ -254,7 +254,7 @@
         <div class="card h-100">
           <img src="Images/GallitoRocas.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Fondo Antonia</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
               <div class="progress-bar" style="width: 25%">25%</div>
@@ -266,7 +266,7 @@
         <div class="card h-100">
           <img src="..." class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Puno colecta</h5>
             <p class="card-text">This is a short card.</p>
           </div>
         </div>
@@ -275,7 +275,7 @@
         <div class="card h-100">
           <img src="..." class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Proyecto en marcha</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
           </div>
         </div>
