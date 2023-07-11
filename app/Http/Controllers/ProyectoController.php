@@ -31,4 +31,9 @@ class ProyectoController extends Controller
         return view("somos");
     }
 
+    public function block (){
+        return view("block");
+    }
+
+
 } 

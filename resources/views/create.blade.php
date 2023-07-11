@@ -7,7 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.112.5">
-    <title>Headers · Bootstrap v5.3</title>
+    <title>comunitarios</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/PunoColecta.png') }}">
+
 
         <!-- Scripts -->
         @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -21,95 +23,93 @@
 
 <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-        .form-control-dark {
-  border-color: var(--bs-gray);
+<style>
+    .form-control-dark {
+border-color: var(--bs-gray);
 }
 .form-control-dark:focus {
-  border-color: #fff;
-  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+border-color: #fff;
+box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
 }
 
 .text-small {
-  font-size: 85%;
+font-size: 85%;
 }
 
 .dropdown-toggle:not(:focus) {
-  outline: 0;
+outline: 0;
 }
 
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
 
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
+ 
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
 
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
 
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
+  .bd-mode-toggle {
+    z-index: 1500;
+  }
 
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
+  
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  .featurette-heading {
+    letter-spacing: -.05rem;
+  }
+  .carousel {
+    margin-bottom: 4rem;
+  }
 
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
 
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-    </style>
+  .carousel-item {
+    height: 32rem;
+  }
+
+  .carousel-image {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+ 
 
     
     <!-- Custom styles for this template -->
@@ -194,37 +194,205 @@
 
 
   <!-- HEADER -->
-  <header class="p-3 text-bg "style="background-color: #ffde59;">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a class="navbar-brand" href="#">
-            <img src="images/LogoComunitarios.png" alt="logo" width="230" height="50">
-          </a>
-
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="index" class="nav-link px-2 text-dark">CONÓCENOS</a></li>
-          <li><a href="somos" class="nav-link px-2 text-dark">QUÉ HACEMOS</a></li>
-          <li><a href="proyectos" class="nav-link px-2 text-white">AYUDANOS</a></li>
-        </ul>
-
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
-        </form>
-
-        <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">Login</button>
-          <button type="button" class="btn btn-warning">Sign-up</button>
+ 
+ 
+  <main>
+    <header class="p-3 text-bg" style="background-color: while;">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a class="navbar-brand" href="#">
+              <img src="images/LogoComunitarios.png" alt="logo" width="230" height="50">
+            </a>
+  
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="conocenos" class="nav-link px-2 text-dark">INICIO</a></li>
+            <li><a href="hacemos" class="nav-link px-2 text-dark">PROGRAMAS Y FONDOS</a></li>
+            <li><a href="fondos" class="nav-link px-2 text-dark">SERVICIOS</a></li>
+            <li><a href="fondos" class="nav-link px-2 text-dark">CONTACTOS</a></li>
+          </ul>
+  
+          <div class="text-end">
+            <button type="button" class="btn btn-primary" style="background-color: #142f43;">Ingresa</button>
+            <button type="button" class="btn btn-primary" style="background-color: #142f43;">Regístrate</button>
+          </div>
         </div>
       </div>
+    </header>
+  </main>
+
+    
+  <main>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Vista_de_Puno_y_el_Titicaca%2C_Per%C3%BA%2C_2015-08-01%2C_DD_63.JPG" alt="Imagen" width="100%" height="100%" class="carousel-image">
+  
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Example headline.</h1>
+              <p>Some representative placeholder content for the first slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+        <img src="https://www.peru.travel/Contenido/Destino/Imagen/pe/37/1.3/Principal/Los%20Uros.jpg" alt="Imagen" width="100%" height="100%" class="carousel-image">
+  
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+        <img src="https://www.peruhop.com/wp-content/uploads/Puno-Guide-Gallery-2.jpg" alt="Imagen" width="100%" height="100%" class="carousel-image">
+  
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-  </header>
 
-  <div class="b-example-divider"></div>
+    
+    <div class="container col-xxl-8 px-4 " >
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="images/Imagen1.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">NUESTRO PROPOSITO</h1>
+            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            </div>
+          </div>
+        </div>
+    </div>
+
+<div class="p-3 mb-2 text-white" >
+  <h1 class="text-center py-3">¿CÓMO FACILITAMOS LA SOLUCIÓN?</h1>
+  <div class="container py-2">
+    <div class="py-3 row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h2>Change the background</h2>
+          <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+        </div>
+      </div>
+      <div class="py-4 col-md-6">
+        <img src="images/Imagen1.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+    </div>
+  </div>
 
 
 
+        
+        
+
+        <div class="p-3 mb-2 " style="background-color: while;">
+        <div class="container py-4">
+        <h1 class="text-center py-4">PROGRAMAS Y FONDOS INSIGNIA</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="Images/GallitoRocas.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Fondo Antonia</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">precio: 30 </p>
+      
+                  <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 25%">25%</div>
+                  </div>
+                  <div class="btn button-center py-2">
+                    <form action="{{route('paypal')}}" method="POST" >
+                      <input name="hidden" name="precio" value="30" />
+                    <button type="submit" class="btn btn-primary">Donar</button>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          
+            <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a short card.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+    </div>
+    </div>
+
+<main style="background-color: #ff5757;">
+    <div class="py-5 text-white ">
+        <div class="container py-4">
+        <h1 class="text-center py-4">SOPORTE Y RESPALDO</h1>
+        
+       </div> 
+       <div id="logoCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel">
+          <div class="carousel active">
+            <div class="row">
+              <div class="col-2">
+                <img src="images/PunoColecta.png" class="d-block w-100" alt="Logo 1">
+              </div>
+              <div class="col-2">
+                <img src="images/Lidera.png" class="d-block w-100" alt="Logo 2">
+              </div>
+              <div class="col-2">
+                <img src="images/Lidera.png" class="d-block w-100" alt="Logo 3">
+              </div>
+              <div class="col-2">
+                <img src="images/Lidera.png" class="d-block w-100" alt="Logo 4">
+              </div>
+              <div class="col-2">
+                <img src="images/Lidera.png" class="d-block w-100" alt="Logo 5">
+              </div>
+              <div class="col-2">
+                <img src="images/Lidera.png" class="d-block w-100" alt="Logo 6">
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+        
 </main>
-
 
     <!-- FOOTER -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -243,46 +411,31 @@
       </symbol>
     </svg>
 
-    <div class="container">
-      <footer class="py-5">
-        <div class="row">
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-            </ul>
-          </div>
     
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-            </ul>
-          </div>
-    
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-            </ul>
-          </div>
-    
-          <div class="col-md-5 offset-md-1 mb-3">
+  <!-- Footer -->
+  <footer class=" py-3 text-white" style="background-color: #142f43;" >
+    <div class="container p-4">
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <img src="images/LogoComunitarios.png" alt="logo" width="230" height="50">
+          <h5> comunitarios.ft@gmail.com</h5>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <div class="row justify-content-center align-items-center">       
+           <h5 class="text-uppercase">Contactanos en redes</h5>
+          <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#linkedin"/></svg></a></li>
+        </ul>
+        </div> 
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <form>
-              <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of what's new and exciting from us.</p>
+              <p>Suscríbete a nuestra comunidad y recibe noticias</p>
               <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                 <label for="newsletter1" class="visually-hidden">Email address</label>
                 <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
@@ -291,17 +444,15 @@
             </form>
           </div>
         </div>
-    
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-          <p>&copy; 2023 Company, Inc. All rights reserved.</p>
-          <ul class="list-unstyled d-flex">
-            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-          </ul>
         </div>
+      </div>
+    </div>
       </footer>
     </div>
+    
+
+      
+    <!--- Scripts --->
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>

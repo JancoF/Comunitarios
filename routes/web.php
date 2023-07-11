@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PaypalController;
 use App\Http\Controllers\ProyectoController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,7 +22,6 @@ Route::get('/', function () {
 
 Route::get('/index',[ProyectoController::class, 'index']);
 
-
 // crud de proyectos
 Route::get("/create", [ProyectoController::class,'create']);
 
@@ -32,18 +32,17 @@ Route:: get("/fondos",[ProyectoController::class, 'fondos']);
 
 Route:: get("/conocenos",[ProyectoController::class, 'conocenos']);
 
+Route:: get("/block",[ProyectoController::class, 'block']);
 
-/*
-Route::get("proyetos/{nombre?}", function($nombre=null){
-    
-    if ($nombre != null){
-    return "el colaborado es: $nombre";
-    }
-    else{
-        return "mostrar el formulario de crear productos";
-    }
-});*/
+Route::post('paypal/payment',[PaypalController::class,'payment'])->name('paypal');
+Route::get('paypal/succes',[PaypalController::class, 'succes'])->name('paypal_succes');
+Route::get('paypal/cancel',[PaypalController::class, 'cancel'])->name('paypal_cancel');
+
+
+
+
 
 Auth::routes();
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
